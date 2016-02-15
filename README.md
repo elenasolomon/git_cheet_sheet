@@ -2,7 +2,7 @@
 ## ** Git cheetsheet**
 
 
-### **_Git configuration_**
+### **Git configuration**
 
 **git config --global user.name "[name]"**
 - sets the name you want attahced to your commit
@@ -19,7 +19,7 @@
 **git config --global credential.helper "cache --timeout=3600"**
 
 
-### **_Git basics_**
+### **Git basics**
 
 **git add -A** 
 - stages All
@@ -87,3 +87,12 @@ _**git stash apply** command only tries to apply the stashed work and does not r
 
 **git stash pop**
 - applies the stash and then immediately drops it from the stach
+
+### **Squash**
+
+**git reset --soft HEAD~N**
+**git commit -m**
+- squashes last N commits
+
+**git rebase -i HEAD~N**
+- gives the possibility to squash 
