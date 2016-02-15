@@ -21,13 +21,13 @@
 
 ### **_Git basics_**
 
-**git add -A **
+**git add -A** 
 - stages All
 
 **git add .** 
 - stages new and modified, without deleted
 
-**git add -u **
+**git add -u**
 - stages modified and deleted, without new
 
 **git status**
@@ -56,3 +56,34 @@ _[http://www.gitguys.com/topics/git-diff/](http://www.gitguys.com/topics/git-dif
 **git commit -a**
 - git automatically stage every file that is already tracked before doing the commit, letting you skip _git add_ part
 
+### **Working with remotes**
+
+**git fetch [remote-name]**
+- default name for a remote project is origin
+- the command goes to the remote project and pulls down all the data from the remote project that you don't have yet
+- it doesn't automatically merge it any of your work => merge manually
+
+**git pull [remote-name]**
+- fetches data from the server you originally cloned from and automatically tries to merge it into the code you're currently working on
+
+**git push [remote-name] [branch-name]**
+- uploads all local branch commits to GitHub
+
+### **Stashing**
+
+**git stash**
+- stashing takes the dirty state of the working directory (modified tracked files and staged changes) and saves it on a stack of unfinished changes that you can reapply at any time
+
+**git stash list**
+- lists the stashed that you have stored
+
+**git stash apply**
+- applies tha latest stash (stash@{0})
+
+**git stash apply <stash_id>**
+- applies a specific stash
+
+_**git stash apply** command only tries to apply the stashed work and does not remove it from the stashed work._
+
+**git stash pop**
+- applies the stash and then immediately drops it from the stach
