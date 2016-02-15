@@ -1,5 +1,5 @@
 
-## ** Git cheetsheet**
+## Git cheetsheet
 
 
 ### **Git configuration**
