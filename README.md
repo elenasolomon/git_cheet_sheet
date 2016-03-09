@@ -102,3 +102,4 @@ http://stackoverflow.com/questions/9683279/make-the-current-commit-the-only-init
 
 ### **Push specific commit
 git push origin [commit_hash]:master
+http://stackoverflow.com/questions/3230074/git-pushing-specific-commit
