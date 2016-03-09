@@ -101,4 +101,4 @@ _**git stash apply** command only tries to apply the stashed work and does not r
 http://stackoverflow.com/questions/9683279/make-the-current-commit-the-only-initial-commit-in-a-git-repository
 
 ### **Push specific commit
-git push origin <commit_hash>:master
+git push origin [commit_hash]:master
